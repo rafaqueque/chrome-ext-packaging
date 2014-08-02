@@ -3,7 +3,7 @@
 echo "Initializing... Setting vars...";
 
 git_dir=".git";
-git_status=$(git status);
+git_status=$(git status --long);
 git_build=$(git tag | sort -r | head -1);
 git_repo_name=${PWD##*/};
 zip_file=$git_repo_name-$git_build.zip;
